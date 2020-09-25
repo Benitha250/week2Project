@@ -1,8 +1,8 @@
 // Getting values from the form
-function getAkanName () {
-    let yearOfBirth = document.getElementById("year-input").value;
-    let monthOfBirth = Number(document.getElementById("month-input").value);
-    let dayOfBirth = Number(document.getElementById("day-input").value);
+function getName () {
+    let yearOfBirth = document.getElementById("year").value;
+    let monthOfBirth = Number(document.getElementById("month").value);
+    let dayOfBirth = Number(document.getElementById("day").value);
     let genders = document.getElementsByName("gender");
   // Getting gender
   function getGender () {
@@ -73,17 +73,17 @@ function getAkanName () {
 
   if (myGenderValue == "male" && monthValid && dayValid) {
     document.getElementById('result').textContent = "You were born on a " + daysOfWeek[index] + " , your Akan name is " + maleAkanNames[index];
-    document.getElementById('display-name').textContent = "Here is your Akan name: ";
+    document.getElementById('display').textContent = "Here is your Akan name: ";
     document.getElementById('result').style.fontSize = "18px";
-    document.querySelector('h1').textContent = "Hello" + " " + maleAkanNames[index];
+    document.querySelector('h1').textContent = "Hi" + " " + maleAkanNames[index];
     return false;
   } else if (myGenderValue == "female" && monthValid && dayValid) {
     document.getElementById('result').textContent = "You were born on a " + daysOfWeek[index] + " , your Akan name is " + femaleAkanNames[index];
-    document.getElementById('display-name').textContent = "Here is your Akan name: ";
+    document.getElementById('display').textContent = "Here is your Akan name: ";
     document.getElementById('result').style.fontSize = "18px";
-    document.querySelector('h1').textContent = "Hello" + " " + femaleAkanNames[index];
+    document.querySelector('h1').textContent = "Hi" + " " + femaleAkanNames[index];
     return false;
   } else {
-    alert("You entered an invalid day or month, please try again");
+    alert("Invalid day or month, please try again");
   }
 }

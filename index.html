@@ -16,26 +16,26 @@
                 and then depending on your gender, outputs your Akan Name. You can find those Akan names
                 <a class="names" href="https://en.wikipedia.org/wiki/Akan_names" target="_blank">here!</a> They are derived from Ghanaian culture.</p>
             <p>Find out what your Akan name is, fill in the form below:.</p>
-            <form class="myform" onsubmit="return getAkanName()">
+            <form class="myform" onsubmit="return getName()">
                 <label for="day-of-birth">
                   Day:
-                  <input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
+                  <input id="day" type="number" name="day-of-birth" placeholder="DD" value="" required>
                 </label><br> <br>
                 <label for="month-of-birth">
                   Month:
-                  <input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
+                  <input id="month" type="number" name="month-of-birth" placeholder="MM" value="" required>
                 </label><br> <br>
                 <label for="year-of-birth">
                 Year:
-                <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
+                <input id="year" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
               </label>
               <br>
               <label for="gender">
                 <p>Select your gender: </p>
                 Male
-                <input id="male-input" type="radio" name="gender" value="male" required>
+                <input id="male" type="radio" name="gender" value="male" required>
                 Female
-                <input id="female-input" type="radio" name="gender" value="female" required>
+                <input id="female" type="radio" name="gender" value="female" required>
               </label>
               <br><br>
               <input id="get-name" type="submit" name="" value="Generate name">
@@ -44,7 +44,7 @@
             <form onsubmit="return clearInput()">
                 <input class="clear" type="submit" value="Clear input">
             </form>
-            <h4 id = display-name><strong>Your Ghanaian Akan name will be displayed below:</strong></h4>
+            <h4 id = 'display'><strong>Your Ghanaian Akan name will be displayed below:</strong></h4>
             <p id="result"></p>
           </div>
       </div>
