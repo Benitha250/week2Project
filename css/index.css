@@ -34,4 +34,15 @@ a:hover{
     border-radius: 5px;
     width: 60px;
     height: 20px;
-  }
+}
+#get-name, .clear{
+    border-radius: 5px;
+    color: #000000;
+    background-color: cyan;
+    text-align: center;
+    border: solid 1px white;
+    width: 108px;
+    height: 32px;
+    font-size: 13px;
+    box-shadow: 2px 2px #000000;
+}
