@@ -6,9 +6,24 @@ Uwase Benitha
 ## Description
 This web page is going to take your birth date details, calculates the day of the week you were born on and then depending on your gender, outputs your Akan Name. These names are derived from Ghanaian culture where every child depending on the gender and the day he/she is born on is given these kind of name.
 
+## Setup instructions
+* There is no need to enter your personal credials to access this page.
+* You will only be required to enter you birthday credentials.
+* Scroll down until the last to see all information.
+* You only need the live link to access my page.
+
+## Technologies Used
+* HTML  
+* CSS
+* Javascript
+
 
 ## Github Pages link
-You can view the live application by following this link https://collinsmuriuki.github.io/akan-name-generataor/
+You can view the live application by following this link 
+
+## Contact information
+* buwase120@daviscollege.com
+* +250780873772
 
 ## License
 #### *MIT License*
