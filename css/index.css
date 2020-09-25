@@ -23,3 +23,10 @@ h1{
     padding-bottom: 20px;
     border-radius: 5%;
 }
+.names{
+    text-decoration: underline;
+    color: white;
+}
+a:hover{
+    color: cyan;
+}
