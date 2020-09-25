@@ -16,6 +16,20 @@
                 and then depending on your gender, outputs your Akan Name. You can find those Akan names
                 <a class="names" href="https://en.wikipedia.org/wiki/Akan_names" target="_blank">here!</a> They are derived from Ghanaian culture.</p>
             <p>Find out what your Akan name is, fill in the form below:.</p>
+            <form class="myform" onsubmit="return getAkanName()">
+                <label for="day-of-birth">
+                  Day:
+                  <input id="day-input" type="number" name="day-of-birth" placeholder="DD" value="" required>
+                </label><br> <br>
+                <label for="month-of-birth">
+                  Month:
+                  <input id="month-input" type="number" name="month-of-birth" placeholder="MM" value="" required>
+                </label><br> <br>
+                <label for="year-of-birth">
+                Year:
+                <input id="year-input" type="number" name="year-of-birth" placeholder="YYYY" value="" required>
+              </label>
+            </form>
           </div>
       </div>
   </body>
