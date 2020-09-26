@@ -19,7 +19,7 @@ This web page is going to take your birth date details, calculates the day of th
 
 
 ## Github Pages link
-You can view the live application by following this link 
+You can view the live application by following this link https://benitha250.github.io/week2Project/
 
 ## Contact information
 * buwase120@daviscollege.com
