@@ -1,9 +1,11 @@
+
 // Getting values from the form
 function getName () {
-    let yearOfBirth = document.getElementById("year").value;
-    let monthOfBirth = Number(document.getElementById("month").value);
-    let dayOfBirth = Number(document.getElementById("day").value);
-    let genders = document.getElementsByName("gender");
+  let yearOfBirth = document.getElementById("year").value;
+  let monthOfBirth = Number(document.getElementById("month").value);
+  let dayOfBirth = Number(document.getElementById("day").value);
+  let genders = document.getElementsByName("gender");
+
   // Getting gender
   function getGender () {
     for (let gender of genders){
@@ -16,7 +18,7 @@ function getName () {
   let myGenderValue = getGender();
   console.log(myGenderValue);
 
-    // validation functions
+  // validation functions
   function monthValidator () {
     if (monthOfBirth < 1 || monthOfBirth > 12) {
       return false;
@@ -24,6 +26,7 @@ function getName () {
       return true;
     }
   }
+
   function dayValidator () {
     if (monthOfBirth === 2 && Number(yearOfBirth)%4 === 0) {
       if (dayOfBirth > 28 || dayOfBirth < 1) {
@@ -41,14 +44,15 @@ function getName () {
       return true;
     }
   }
+
   let monthValid = monthValidator();
   let dayValid = dayValidator();
 
   //Day of birth (Sunday = 1, Monday = 2 ...)
-  let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
+  let dayOfWeekNumber = Math.floor((((Number(yearOfBirth.slice(0,3))/4)-1*Number(yearOfBirth.slice(0,2))-1)+
           ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7);
 
-//Arrays of Akan names for males & females and days of the week
+  //Arrays of Akan names for males & females and days of the week
   let daysOfWeek = [
     "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
   ];
@@ -84,6 +88,6 @@ function getName () {
     document.querySelector('h1').textContent = "Hi" + " " + femaleAkanNames[index];
     return false;
   } else {
-    alert("Invalid day or month, please try again");
+    alert("You entered an invalid day or month, please try again");
   }
 }

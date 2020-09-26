@@ -30,7 +30,7 @@ h1{
 a:hover{
     color: cyan;
 }
-#year-input, #month-input, #day-input{
+#year, #month, #day{
     border-radius: 5px;
     width: 60px;
     height: 20px;
